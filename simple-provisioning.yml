@@ -48,7 +48,7 @@
       tags:
         Name: Public
       subnets:
-      - "{{ result_subnet.subnet.id }}"
+        - "{{ result_subnet.subnet.id }}"
       routes:
         - dest: 0.0.0.0/0
           gateway_id: "{{ result_igw.gateway_id }}"
